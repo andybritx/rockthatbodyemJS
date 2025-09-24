@@ -41,7 +41,6 @@ function showNextLine() {
             showNextLine();
         }, currentLine.duration);
     } else {
-        // Reinicia o ciclo após a última frase
         lineIndex = 0;
         setTimeout(showNextLine, 1000);
     }
