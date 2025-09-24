@@ -1,0 +1,35 @@
+body {
+    background-color: #000000;
+    color: rgb(28, 172, 28);
+    font-family: "Jersey 15", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+#lyrics {
+    font-size: 78px;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.visible {
+    animation: fadeIn 1s ease-in-out forwards;
+}
